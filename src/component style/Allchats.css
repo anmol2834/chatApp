@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Caveat:wght@400..700&family=Fugaz+One&family=Kablammo&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Quicksand:wght@300..700&family=Righteous&family=Rubik+Wet+Paint&family=Space+Grotesk:wght@300..700&display=swap');
+
+
+:root{
+    --primary-color: #FEE7D2;
+    --secondary-color: #ffd9b5;
+    --invert: invert(0%);
+    --color: black;
+}
+[darkTheme='dark']{
+    --primary-color: #222;
+    --secondary-color: #444;
+    --invert: invert(100%);
+    --color: white;
+}
+
+.left-container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Quicksand", sans-serif;
+}
+.all-chats{
+    width: 100%;
+    height: 90%;
+    margin: 20px;
+    transform: translate(30px);
+    background: var(--primary-color);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+}
+.all-chats .add-freind{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.all-chats .add-freind .inner-add-freind{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.all-chats .add-freind .inner-add-freind:hover{
+    transition: 0.2s;
+    transform: scale(120%);
+}
+.all-chats .add-freind .inner-add-freind img{
+    width: 100px;
+    height: 100px;
+    filter: var(--invert);
+}
+.all-chats .add-freind .inner-add-freind h3{
+    text-transform: capitalize;
+    font-weight: 400;
+    color: var(--color);
+}

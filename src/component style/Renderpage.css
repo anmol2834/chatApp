@@ -1,0 +1,33 @@
+
+:root{
+    --primary-color: #FEE7D2;
+    --secondary-color: #ffd9b5;
+    --color: black;
+}
+[darkTheme='dark']{
+    --primary-color: #222;
+    --secondary-color: #444;
+    --color: white;
+}
+
+.mid-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.render-page{
+    width: 90%;
+    height: 100%;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 30px;
+    background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}

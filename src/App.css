@@ -1,0 +1,5 @@
+*{
+    user-select: none;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+}
